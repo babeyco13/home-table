@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+</head>
+<body> 
+ <h1>Соціальне опитування</h1>
+ <h1>Соціальні мережі-За і Проти!!!</h1>
+ <a href="Table.html">Таблиця</a>
+    
+    <form method="POST" action="https://formspree.io/babeyco13@ukr.net">
+        <fieldset>
+            <label for="name">Ім`я:</label>
+            <input type="text" name="name" id="name" required>
+            <br>
+            <label for="surname">Прізвище:</label>
+            <input type="text" name="surname" id="surname" required>
+            <br>
+            <label>E-mail:
+                <input type="email" name="client-email" required>
+            </label>
+            <br>
+            <label>Мобільний номер:
+                <input type="text" name="number" required pattern="[+380][0-9]{12}"
+                 placeholder="+38(XXX)XXX-XX-XX" title="+38(XXX)XXX-XX-XX">
+            </label>
+        </fieldset>
+        <fieldset>
+            Ваша стать:
+            <br>
+            <label>
+                <input type="radio" name="gender" value="male" checked>Чоловіча
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="gender" value="female">Жіноча
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="gender" value="other">Інша
+            </label>
+            <br>
+            <label >Ваш вік:
+            <br>
+            <input type="number" id="b" name="age" value="18">
+            </label>
+        </fieldset>
+          <fieldset>
+           <label >Ваше ставлення до соціальних мереж:
+            <br>
+            <input list="Stavlennia" name="Stavlennia">
+  			<datalist id="Stavlennia">
+    			<option value="Позитивне">
+    			<option value="Нейтральне">
+    			<option value="Негативне">
+  			</datalist>
+            </label>
+            <br>
+            <label >В яких соціальних мережах зареєстровані?
+            <br>
+            <input type="checkbox" name="Mereshi1" value="VK">ВКонтакте
+            <br>
+            <input type="checkbox" name="Mereshi2" value="Facebook">Facebook 
+            <br>
+            <input type="checkbox" name="Mereshi3" value="Odnoklasnyky">Однокласники
+             <br>
+            <input type="checkbox" name="Mereshi4" value="Nezarehistrovaniy">Не зареєстрований
+            </label>
+            <br>
+            <label>Скільки часу ви проводите в соціальних мережах?
+             <br>
+             0
+             <input type="range" id="Time" name="time" value="12">
+             24
+            </label>
+          </fieldset>
+        <input type="submit">
+        <input type="reset">
+    </form>
+	
+</body>
+</html>
